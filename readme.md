@@ -130,16 +130,6 @@ The application features a fully responsive design:
 ## Contributions
 
 Contributions are welcome! If you want to improve this project, feel free to fork the repository and submit a pull request.
-
----
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1f8e1170897586a68ac6938ed11907aba9d297d3
-=======
->>>>>>> 1f8e1170897586a68ac6938ed11907aba9d297d3
 ## Contact
 
 For any inquiries or suggestions, please contact:
@@ -150,10 +140,3 @@ For any inquiries or suggestions, please contact:
 ##git clone
 git clone https://github.com/Sky607/student-teacher-appointment-booking.git
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1f8e1170897586a68ac6938ed11907aba9d297d3
-=======
->>>>>>> 1f8e1170897586a68ac6938ed11907aba9d297d3
