@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Teacher Booking Appointment</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="brand">Booking App</div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./teacher.html">Teacher Panel</a></li>
+            <li><button id="logout-button">Logout</button></li>
+            
+        </ul>
+    </nav>
+<h2 class="teacher-title">Teacher Panel</hh2>
+<h3 class="pending-title">Pending Appointments : </h3>
+<ul id="teacherAppointments"></ul>
+<h3 class="approved-title">Aprroved Appointments : </h3>
+<ul id="teacherApprovedAppointments"></ul>
+<script>
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+navLinks.classList.toggle('active');
+});
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        navLinks.classList.remove('active');
+    }})
+</script>
+
+<script type="module" src="../js/firebase_config.js"></script>
+<script type="module" src="../js/teacher.js"></script>
+</body>
+</html>

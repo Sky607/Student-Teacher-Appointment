@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Teacher Booking Appointment</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="brand">Booking App</div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./student.html">Student Panel</a></li>
+            <li><a href="./Login.html">Login</a></li>
+            <li><a href="./register.html">Register</a></li>
+            <li><button id="logout-button">Logout</button></li>
+            
+        </ul>
+    </nav>
+<h2 >Student Panel</h2>
+
+<h3 style="margin-top:10px;text-align:left">Book Appointment</h3>
+<form id="appointment-form">
+<select id="select-teacher">
+    <option value="">Select a teacher</option>
+</select>
+<input type="text" id="appointmentMessage" placeholder="Message">
+<button type="submit" id="bookAppointment">Book Appointment</button>
+</form>
+<h3 class="appointment-title">Your Appointments</h3>
+<ul id="appointmentList"></ul>
+<script>
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+navLinks.classList.toggle('active');
+});
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        navLinks.classList.remove('active');
+    }})
+</script>
+
+<script type="module" src="../js/firebase_config.js"></script>
+<script type="module"src="../js/student.js"></script>
+</body>
+</html>
