@@ -42,14 +42,22 @@ The **Student-Teacher Booking Appointment System** is a web-based application de
 ## File Structure
 
 ```plaintext
-project-root/
+module/
 ├── index.html         # Main HTML file for the application
+├── admin.html  
+├── Login.html  
+├── register.html  
+├── student.html  
+├── teacher.html  
+css/
 ├── style.css          # CSS file for styling
+js/
 ├── admin.js           # JavaScript file for Admin functionalities
 ├── student.js         # JavaScript file for Student functionalities
 ├── teacher.js         # JavaScript file for Teacher functionalities
+├── login-register.js  
 ├── firebase-config.js # Firebase configuration and initialization
-└── assets/            # Directory for images and additional assets
+ 
 ```
 
 ---
